@@ -1,0 +1,208 @@
+.main{
+    
+position: absolute;
+width: auto;
+height: 1300px;
+left: -15px;
+top: 0px;
+}
+.main1{
+    
+position: absolute;
+width: 1440px;
+height: 951px;
+left: 0px;
+top: 0px;
+ 
+
+}
+.main2{
+    position: absolute;
+width: 1235px;
+height: 774px;
+left: -7px;
+top: -11px;
+
+background: linear-gradient(90deg, #E76ECC 22.21%, rgba(231, 114, 205, 0) 77.45%);
+}
+.main3{
+    position: absolute;
+width: 605.28px;
+height: 381.89px;
+left: 125px;
+top: 20px;
+}
+.head{
+    position: absolute;
+width: 558px;
+height: 164px;
+left: 125px;
+top: 177px;
+
+font-family: 'DM Serif Display';
+font-style: normal;
+font-weight: 400;
+font-size: 50px;
+line-height: 60px;
+/* or 120% */
+
+letter-spacing: 0.1em;
+
+color: #000000;
+}
+.para{
+    position: absolute;
+width: 570px;
+height: 91px;
+left: 125px;
+top: 385px;
+
+font-family: 'Open Sans';
+font-style: normal;
+font-weight: 700;
+font-size: 24px;
+line-height: 33px;
+
+color: #000000;
+}
+.btn{
+  /* Rectangle 7 */
+
+
+position: absolute;
+width: 462.33px;
+height: 96.85px;
+left: 125px;
+top: 517px;
+
+background: linear-gradient(90deg, #E3008D 0%, #FBA9D8 48.46%, #EC52B2 100%);
+border-radius: 10px;
+}
+.btn_content{
+/* BOOK A FREE CONSULTATION */
+
+/* BOOK A FREE CONSULTATION */
+
+
+position: absolute;
+width: 343.7px;
+height: 34.41px;
+left: 65.67px;
+top: 30.31px;
+
+font-family: 'Open Sans';
+font-style: normal;
+font-weight: 700;
+font-size: 20px;
+line-height: 27px;
+letter-spacing: 0.1em;
+text-transform: capitalize;
+ 
+
+color: white
+}
+
+.vec{
+    /* Vector */
+
+
+position: absolute;
+width: 17.84px;
+height: 8.11px;
+left: 543.73px;
+top: 555.23px;
+
+background: #FFFFFF;
+transform: rotate(90deg);
+}
+
+.main4{
+    position: absolute;
+width: 30%;
+height: 829px;
+left: -15px;
+top: 898px;
+
+background: url(#);
+filter: (7.5px);
+}
+.box1{
+    
+position: absolute;
+width: 396.9px;
+height: 392px;
+left: 73px;
+top: 150px;
+
+background: #EB61B4;
+border-radius: 9.41964px;
+}
+.head1{
+    position: absolute;
+width: 195.61px;
+height: 31.05px;
+left: 140px;
+top: 120px;
+
+font-family: 'Poppins';
+font-style: normal;
+font-weight: 600;
+font-size: 22.6071px;
+line-height: 34px;
+
+color: #FFFFFF;
+}
+.para1{
+    position: absolute;
+width: 328.86px;
+height: 140.69px;
+left: 40.18px;
+top: 180.95px;
+
+font-family: 'Poppins';
+font-style: normal;
+font-weight: 400;
+font-size: 18px;
+line-height: 203%;
+/* or 37px */
+
+text-align: center;
+
+color: #FFFFFF;
+}
+.btn1{
+    box-sizing: border-box;
+
+position: absolute;
+width: 199px;
+height: 46px;
+left: 90px;
+top: 280px;
+
+background: linear-gradient(90deg, #EF58B4 0%, #FAA4D6 48.46%, #ED57B4 100%);
+border: 1px solid #FFFFFF;
+box-shadow: 0px 4px 40px rgba(177, 146, 65, 0.6);
+border-radius: 10px;
+}
+.icon1{
+    position: absolute;
+left: 87.5%;
+right: -62.5%;
+top: 12.5%;
+bottom: 12.5%;
+
+transform: matrix(-1, 0, 0, 1, 0, 0);
+}
+.main_head{
+    display: flex;
+}
+.flex {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; /* center the items horizontally */
+    align-items: flex-start; /* align the items to the top */
+  }
+  .HomeCard {
+  flex-basis: 30%;
+  margin: 10px;
+}

@@ -1,0 +1,18 @@
+ 
+
+.periodImg{
+    margin-top: 50px;
+    width: fit-content;
+    height: 700px;
+}
+.calendar {
+	margin: 30px auto 20px auto;
+	box-shadow: 0 5px 10px 2px rgba(0, 0, 0, 0.25);
+}
+
+abbr[title] {
+	text-decoration: none;
+}
+text-center{
+    margin-top: 70px;
+}
