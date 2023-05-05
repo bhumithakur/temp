@@ -8,7 +8,7 @@ function Doctor() {
  }
         return (
         <div className="relative bg-lavenderblush w-full h-[162.5rem] overflow-hidden text-left text-[0.94rem] text-black font-poppins">
-            <div className="absolute top-[132.38rem] left-[0rem] bg-gray-300 w-[90rem] h-[30.13rem]" />
+            <div className="absolute top-[132.38rem] left-[0rem] bg-gray-300 w-screen h-[30.13rem]" />
             <div className="absolute top-[144.56rem] left-[11.44rem] leading-[1.5rem] text-justify inline-block w-[19.06rem]">
                 joint replacement is a surgery to replace a knee joint with a man made
                 artificial joint. a knee joint with a man-made artificial joint.
@@ -98,7 +98,7 @@ function Doctor() {
                 src="/group.svg"
             />
             <img
-                className="absolute top-[6.81rem] left-[0rem] w-[90rem] h-[44.5rem] object-cover opacity-[0.5]"
+                className="absolute top-[6.81rem] left-[0rem] w-screen h-[44.5rem] object-cover opacity-[0.5]"
                 alt=""
                 src="/unsplashe285pjbc4ue@2x.png"
             />
@@ -199,11 +199,11 @@ function Doctor() {
                     </div>
                 </div>
             </div>
-            <div className="absolute top-[47.19rem] left-[0rem] w-[88.56rem] h-[51.25rem] text-[1.25rem] text-light-background-color font-dm-serif-display">
-                <div className="absolute top-[0rem] left-[0rem] w-[88.56rem] h-[51.25rem]">
-                    <div className="absolute top-[0rem] left-[0rem] w-[90rem] h-[47.06rem]">
+            <div className="absolute top-[47.19rem] left-[0rem] w-screen h-[51.25rem] text-[1.25rem] text-light-background-color font-dm-serif-display">
+                <div className="absolute top-[0rem] left-[0rem] w-screen h-[51.25rem]">
+                    <div className="absolute top-[0rem] left-[0rem] w-screen h-[47.06rem]">
                         <img
-                            className="absolute top-[0rem] left-[0rem] w-[90rem] h-[40.88rem]"
+                            className="absolute top-[0rem] left-[0rem] w-screen h-[40.88rem]"
                             alt=""
                             src="/rectangle-13.svg"
                         />

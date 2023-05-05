@@ -1,6 +1,7 @@
 import React from 'react'
 import "./navbar.css"
 //import logo from 'src/Components/icon.png';
+import logo from "./logo.png"
 import { useAuth0 } from "@auth0/auth0-react";
 
 function Header() {
@@ -13,7 +14,7 @@ console.log(user)
           <div className="col-12">
             <nav className="main-nav">
               {/* ***** Logo Start ***** */}
-              <a href="#" className="logo"><img src="#"width="50" height="50" alt="B-Care"/></a>
+              <a href="#" className="logo pt-4"><img src={logo} width="70" height="70" alt="B-Care"/></a>
               {/* ***** Logo End ***** */}
               {/* ***** Menu Start ***** */}
               <ul className="nav">
