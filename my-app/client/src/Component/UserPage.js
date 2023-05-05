@@ -265,7 +265,7 @@ function UserPage() {
           alt=""
           src="/colmd6@2x.png"
         />
-        <div className="absolute top-[27.13rem] left-[0rem] w-[90.63rem] h-[59rem] text-[2.5rem] text-gray-300 font-dm-serif-display">
+        <div className="absolute top-[27.13rem] left-[0rem] w-screen h-[59rem] text-[2.5rem] text-gray-300 font-dm-serif-display">
           <img
             className="absolute top-[0rem] left-[0rem] w-[90.63rem] h-[59rem]"
             alt=""
@@ -287,17 +287,17 @@ function UserPage() {
           </div>
           <div className="absolute top-[8.62rem] left-[5.76rem] w-[0rem] h-[32.19rem]" />
           <img
-            className="absolute bottom-[17.32rem] left-[calc(50%_-_651.49px)] w-[2.39rem] h-[2.37rem]"
+            className="absolute bottom-[17.32rem] left-[calc(50%_-_675.49px)] w-[2.39rem] h-[2.37rem]"
             alt=""
             src="/point2.svg"
           />
           <img
-            className="absolute bottom-[32.82rem] left-[calc(50%_-_651.49px)] w-[2.39rem] h-[2.37rem]"
+            className="absolute bottom-[32.82rem] left-[calc(50%_-_675.49px)] w-[2.39rem] h-[2.37rem]"
             alt=""
             src="/point11.svg"
           />
           <img
-            className="absolute bottom-[49.01rem] left-[calc(50%_-_651.49px)] w-[2.39rem] h-[2.37rem]"
+            className="absolute bottom-[49.01rem] left-[calc(50%_-_675.49px)] w-[2.39rem] h-[2.37rem]"
             alt=""
             src="/point11.svg"
           />
@@ -360,8 +360,9 @@ function UserPage() {
           alt=""
           src="/vector-3.svg"
         />
+        <Navbar1 />
         <div className="absolute top-[0rem] left-[0rem] w-[90rem] h-[28.25rem] overflow-hidden text-[3.63rem] text-deeppink font-playfair-display">
-         <Navbar1 />
+         
           <img
             className="absolute top-[0.69rem] left-[1.31rem] w-[6.5rem] h-[6.13rem] object-cover"
             alt=""

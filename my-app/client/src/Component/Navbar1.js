@@ -34,7 +34,7 @@ console.log(user)
                 <li className="scroll-to-section"><a href="/doctor">Doctors</a></li>
                 {isAuthenticated && <p>Hello {user.name}</p>}
                 {isAuthenticated ?  <button onClick={() => logout({ logoutParams: { returnTo: window.location.origin } })}>LogOut</button> :
-                <button onClick={() => loginWithRedirect()}>LogIn</button>}
+                <button className="pt-1 pr-1 pl-1 pb-1" onClick={() => loginWithRedirect()}>LogIn</button>}
                 {/* <li className="scroll-to-section"><a href="/login">Login/Signup</a></li> */}
                 <li className="scroll-to-section"><a href="#contact-us">Contact Us</a></li>
               </ul>

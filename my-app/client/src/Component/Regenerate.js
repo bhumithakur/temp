@@ -4,7 +4,7 @@ import { useGLTF, Stage, PresentationControls } from "@react-three/drei";
 import { Flex } from "@react-three/flex";
 import bodyWithStitch from "./bodyWithStitch.glb";
 import bodyWithoutStitch from "./bodyWithoutStitch.glb";
-
+import Navbar1 from "./Navbar1"
 function Model(props) {
   const { scene } = useGLTF(bodyWithStitch);
   return <primitive object={scene} {...props} />;
@@ -25,6 +25,8 @@ function Box() {
 
 export default function App() {
   return (
+    <>
+    <Navbar1 />
     <div className="mt-64">
       <div className="-ml-9">
       <Canvas
@@ -69,5 +71,6 @@ export default function App() {
         </Canvas>
       </div>
     </div>
+    </>
   );
 }

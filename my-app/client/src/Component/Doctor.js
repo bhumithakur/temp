@@ -1,6 +1,7 @@
 import React from 'react'
 import { Button, TextField } from "@mui/material";
 import { Link, useNavigate } from 'react-router-dom'
+import Navbar1 from "./Navbar1"
 function Doctor() {
     const navigate = useNavigate();
  function getInfo(){
@@ -68,7 +69,8 @@ function Doctor() {
                 alt=""
                 src="/whatsapp-image-20230406-at-1940-21@2x.png"
             />
-            <nav className="absolute top-[1.19rem] left-[32.94rem] w-[53.69rem] h-[3.31rem]">
+            <Navbar1/>
+            {/* <nav className="absolute top-[1.19rem] left-[32.94rem] w-[53.69rem] h-[3.31rem]">
                 <button className="cursor-pointer [border:none] p-0 bg-deeppink absolute top-[0.38rem] left-[45.19rem] w-[8.5rem] h-[2.94rem]" />
                 <b className="absolute top-[1rem] left-[18.13rem] text-[1.13rem] font-poppins text-gray-200 text-left">
                     About us
@@ -86,7 +88,7 @@ function Doctor() {
                     User
                 </b>
                 <b className="absolute top-[1rem] left-[32.44rem] text-[1.13rem] font-poppins text-deeppink text-left">{`Doctor `}</b>
-            </nav>
+            </nav> */}
             <img
                 className="absolute top-[0.69rem] left-[1.31rem] w-[6.5rem] h-[6.13rem] object-cover"
                 alt=""
@@ -146,9 +148,9 @@ function Doctor() {
                     />
                 </div>
             </div>
-            <div className="absolute top-[83.75rem] left-[0rem] w-[90rem] h-[48.63rem] text-center text-[1.88rem] text-gray-300 font-open-sans">
+            <div className="absolute top-[83.75rem] left-[0rem] w-screen h-[48.63rem] text-center text-[1.88rem] text-gray-300 font-open-sans">
                 <img
-                    className="absolute top-[0rem] left-[0rem] w-[90rem] h-[48.63rem] object-cover"
+                    className="absolute top-[0rem] left-[0rem] w-screen h-[48.63rem] object-cover"
                     alt=""
                     src="/group-45@2x.png"
                 />
@@ -231,12 +233,12 @@ function Doctor() {
                 <div className="absolute top-[7.49rem] left-[5.63rem] w-[0rem] h-[27.96rem]" />
                 <div className="absolute bottom-[15.05rem] left-[calc(50%_-_636.67px)] w-[2.34rem] h-[2.05rem]" />
                 <img
-                    className="absolute bottom-[28.51rem] left-[calc(50%_-_636.67px)] w-[2.34rem] h-[2.05rem]"
+                    className="absolute bottom-[28.51rem] left-[calc(50%_-_675.67px)] w-[2.34rem] h-[2.05rem]"
                     alt=""
                     src="/point.svg"
                 />
                 <img
-                    className="absolute bottom-[42.57rem] left-[calc(50%_-_636.67px)] w-[2.34rem] h-[2.05rem]"
+                    className="absolute bottom-[42.57rem] left-[calc(50%_-_675.67px)] w-[2.34rem] h-[2.05rem]"
                     alt=""
                     src="/point1.svg"
                 />

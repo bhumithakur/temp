@@ -1,5 +1,5 @@
 import React from 'react'
-
+import Navbar1 from "./Navbar1"
 function Patient() {
     return (
         <div className="relative bg-lavenderblush w-full h-[162.5rem] overflow-hidden text-left text-[0.94rem] text-black font-poppins">
@@ -354,7 +354,8 @@ function Patient() {
               src="/icons8uploadtocloud50.svg"
             />
           </button>
-          <nav className="absolute top-[0rem] left-[0rem] overflow-hidden flex flex-row py-[0rem] px-[1.31rem] items-center justify-center gap-[26.94rem]">
+          <Navbar1 />
+          {/* <nav className="absolute top-[0rem] left-[0rem] overflow-hidden flex flex-row py-[0rem] px-[1.31rem] items-center justify-center gap-[26.94rem]">
             <img
               className="relative w-[6.5rem] h-[6.13rem] shrink-0 object-cover"
               alt=""
@@ -379,7 +380,7 @@ function Patient() {
               </b>
               <b className="absolute top-[1rem] left-[32.44rem] text-[1.13rem] font-poppins text-gray-200 text-left">{`Doctor `}</b>
             </div>
-          </nav>
+          </nav> */}
           <div className="absolute top-[8.56rem] left-[0rem] w-[90rem] h-[38rem] overflow-hidden text-center text-[1.38rem] font-dm-serif-display lg:flex">
             <button className="cursor-pointer p-0 bg-hotpink-400 absolute top-[11rem] left-[31.94rem] rounded-xl shadow-[0px_4px_35px_rgba(0,_0,_0,_0.05)] [backdrop-filter:blur(4px)] box-border w-[26.13rem] h-[5.13rem] border-[1px] border-solid border-black" />
             <div className="absolute top-[12.63rem] left-[36.63rem]">
