@@ -30,7 +30,7 @@ console.log(user)
                   </ul>
                 </li>
                 <li className="scroll-to-section"><a href="/user">User</a></li>
-                
+                <li className="scroll-to-section"><a href="/patient">Patient</a></li>
                 <li className="scroll-to-section"><a href="/doctor">Doctors</a></li>
                 {isAuthenticated && <p>Hello {user.name}</p>}
                 {isAuthenticated ?  <button onClick={() => logout({ logoutParams: { returnTo: window.location.origin } })}>LogOut</button> :

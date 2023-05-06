@@ -194,9 +194,9 @@ function UserPage() {
             </button>
           </div>
         </div>
-        <footer className="absolute top-[133.88rem] left-[0rem] w-[90rem] h-[28.63rem]">
+        <footer className="absolute top-[133.88rem] left-[0rem] w-screen h-[28.63rem]">
           <img
-            className="absolute top-[-0.16rem] left-[0.13rem] w-[90rem] h-[28.63rem]"
+            className="absolute top-[-0.16rem] left-[0.13rem] w-screen h-[28.63rem]"
             alt=""
             src="/frame-13.svg"
           />
@@ -361,7 +361,7 @@ function UserPage() {
           src="/vector-3.svg"
         />
         <Navbar1 />
-        <div className="absolute top-[0rem] left-[0rem] w-[90rem] h-[28.25rem] overflow-hidden text-[3.63rem] text-deeppink font-playfair-display">
+        <div className="absolute top-[0rem] left-[0rem] w-screen h-[28.25rem] overflow-hidden text-[3.63rem] text-deeppink font-playfair-display">
          
           <img
             className="absolute top-[0.69rem] left-[1.31rem] w-[6.5rem] h-[6.13rem] object-cover"

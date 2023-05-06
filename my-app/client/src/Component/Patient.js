@@ -1,14 +1,46 @@
-import React from 'react'
+import {React , useState } from 'react'
+
 import Navbar1 from "./Navbar1"
 function Patient() {
+  const[files,setFile] = useState();
+
+  function handleChange(event){
+     setFile(event.target.files);
+    // console.log(event.target.files[0]);
+
+}
+function handleUpload(){
+const formData = new FormData()
+for(let i =0 ; i< files.length; i++){
+  formData.append(`images[${i}]`, files[0])
+
+}
+//formData.append("file",file)
+fetch(
+  'https://eu.httpbin.org/post',{
+    method : "POST",
+    body : formData
+  }
+).then((response)=>response.json()).then(
+ ( result)=>{
+    console.log('success',result);
+  }
+).catch(error=>{
+   console.error("Error :" ,error);;
+})
+
+
+}
+
+  
     return (
         <div className="relative bg-lavenderblush w-full h-[162.5rem] overflow-hidden text-left text-[0.94rem] text-black font-poppins">
           <img
-            className="absolute top-[8.63rem] left-[0rem] w-[90rem] h-[40.31rem] object-cover opacity-[0.5]"
+            className="absolute top-[8.63rem] left-[0rem] w-screen h-[40.31rem] object-cover opacity-[0.5]"
             alt=""
             src="/rectangle-15@2x.png"
           />
-          <footer className="absolute top-[132.38rem] left-[0rem] bg-gray-300 w-[90rem] h-[30.13rem]" />
+          <footer className="absolute top-[132.38rem] left-[0rem] bg-gray-300 w-screen h-[30.13rem]" />
           <div className="absolute top-[144.56rem] left-[11.44rem] leading-[1.5rem] text-justify inline-block w-[19.06rem]">
             joint replacement is a surgery to replace a knee joint with a man made
             artificial joint. a knee joint with a man-made artificial joint.
@@ -68,9 +100,9 @@ function Patient() {
             alt=""
             src="/whatsapp-image-20230406-at-1940-21@2x.png"
           />
-          <div className="absolute top-[46.75rem] left-[0rem] w-[90rem] h-[85.63rem] text-[1.63rem] text-light-background-color">
+          <div className="absolute top-[46.75rem] left-[0rem] w-screen h-[85.63rem] text-[1.63rem] text-light-background-color">
             <img
-              className="absolute top-[0rem] left-[0rem] w-[90rem] h-[85.63rem]"
+              className="absolute top-[0rem] left-[0rem] w-screen h-[85.63rem]"
               alt=""
               src="/rectangle-82.svg"
             />
@@ -381,18 +413,23 @@ function Patient() {
               <b className="absolute top-[1rem] left-[32.44rem] text-[1.13rem] font-poppins text-gray-200 text-left">{`Doctor `}</b>
             </div>
           </nav> */}
-          <div className="absolute top-[8.56rem] left-[0rem] w-[90rem] h-[38rem] overflow-hidden text-center text-[1.38rem] font-dm-serif-display lg:flex">
+          <div className="absolute top-[8.56rem] left-[0rem] w-screen h-[38rem] overflow-hidden text-center text-[1.38rem] font-dm-serif-display lg:flex">
             <button className="cursor-pointer p-0 bg-hotpink-400 absolute top-[11rem] left-[31.94rem] rounded-xl shadow-[0px_4px_35px_rgba(0,_0,_0,_0.05)] [backdrop-filter:blur(4px)] box-border w-[26.13rem] h-[5.13rem] border-[1px] border-solid border-black" />
             <div className="absolute top-[12.63rem] left-[36.63rem]">
               UPLOAD YOUR DOCUMENTS
             </div>
             <div className="absolute top-[19.13rem] left-[35rem] rounded-8xs box-border w-[19.94rem] h-[13.88rem] border-[3px] border-dashed border-black" />
             <div className="absolute top-[28.19rem] left-[36.63rem] text-[1.13rem] flex items-center w-[16.63rem] h-[1.56rem] font-poppins">
-              <span className="[line-break:anywhere] w-full">
-                <span className="font-medium">{`Browse `}</span>
-                <span>to upload</span>
+            <span className="[line-break:anywhere] w-full">
+              {/* <form onSubmit = {handleUpload}> */}
+            <input type="file" multiple onChange={handleChange}/>
+             <button onClick = {handleUpload}>save</button>
+            {/* </form> */}
+                {/* <span className="font-medium">{`Browse `}</span>
+                <span>to upload</span> */}
               </span>
             </div>
+            
             <img
               className="absolute top-[23.47rem] left-[43.41rem] w-[3.13rem] h-[2.69rem]"
               alt=""
