@@ -3,10 +3,14 @@ import "./navbar.css"
 //import logo from 'src/Components/icon.png';
 import logo from "./logo.png"
 import { useAuth0 } from "@auth0/auth0-react";
+import {Link} from "react-scroll";
 
 function Header() {
    const {user, loginWithRedirect ,isAuthenticated,logout} = useAuth0();
-console.log(user)
+// console.log(user)
+function handleClick(){
+  
+}
   return (
     <header className="header-area header-sticky" style={{ background: 'white' }}>
       <div className="container">
@@ -19,7 +23,7 @@ console.log(user)
               {/* ***** Menu Start ***** */}
               <ul className="nav">
                 <li className="scroll-to-section"><a href="/" className="active">Home</a></li>
-                <li className="scroll-to-section"><a href="#about">About</a></li>
+                <li className="scroll-to-section" onClick={handleClick}><a href="#about">About</a></li>
                 <li className="submenu">
                   <a href="javascript:;">Features</a>
                   <ul>

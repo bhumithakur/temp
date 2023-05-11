@@ -48,9 +48,9 @@ function Home() {
       <div>
       <div className="flex" style={{backgroundImage: `url(${bg6})` }}>
        
-      <HomeCard  img ={i1} heading= "Self Check" content = " Lorem ipsum dolor sit amet, consectetur adipiscing elit. Tristique auctos, um viton aeeget massa. Felis scelerisque dolor phasellus " bgColor = "pink-400" />
-       <HomeCard  img={i2} heading= "Estimate Cancer" content = " Lorem ipsum dolor sit amet, consectetur adipiscing elit. Tristique auctos, um viton aeeget massa. Felis scelerisque dolor phasellus " bgColor ="pink-100"/>
-        <HomeCard  img={i3} heading= "Regeneration" content = " Lorem ipsum dolor sit amet, consectetur adipiscing elit. Tristique auctos, um viton aeeget massa. Felis scelerisque dolor phasellus " bgColor ="pink-100"/>
+      <HomeCard  img ={i1} heading= "Self Check" content = " Lorem ipsum dolor sit amet, consectetur adipiscing elit. Tristique auctos, um viton aeeget massa. Felis scelerisque dolor phasellus " bgColor = "pink-400"  to = "./selfcheck"/>
+       <HomeCard  img={i2} heading= "Estimate Cancer" content = " Lorem ipsum dolor sit amet, consectetur adipiscing elit. Tristique auctos, um viton aeeget massa. Felis scelerisque dolor phasellus " bgColor ="pink-100" to = "./analyser"/>
+        <HomeCard  img={i3} heading= "Regeneration" content = " Lorem ipsum dolor sit amet, consectetur adipiscing elit. Tristique auctos, um viton aeeget massa. Felis scelerisque dolor phasellus " bgColor ="pink-100" to = "./regenerate"/>
         
 
       </div>
