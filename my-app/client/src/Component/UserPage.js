@@ -282,8 +282,7 @@ function UserPage() {
             src="/vector-21.svg"
           />
           <div className="absolute top-[30.56rem] left-[8.06rem] text-[1.25rem] tracking-[0.1em] leading-[1.88rem] font-medium font-poppins text-light-background-color inline-block w-[51.92rem]">
-            Morem ipsum dolor sit amet, consectetur adipiscing elit. Nunc
-            vulputate libero et velit interdum, ac aliquet odio mattis.
+          Find your complete journey comfortable with us. Find people like you who emerged as fighters.
           </div>
           <div className="absolute top-[8.62rem] left-[5.76rem] w-[0rem] h-[32.19rem]" />
           <img
@@ -302,16 +301,16 @@ function UserPage() {
             src="/point11.svg"
           />
           <i className="absolute top-[6.5rem] left-[8.06rem] tracking-[0.1em] leading-[3.75rem] inline-block w-[19.57rem] h-[3.5rem]">
-            Step 1
+            Love Yourself
           </i>
           <div className="absolute top-[10rem] left-[8.06rem] text-[1.88rem] tracking-[0.1em] leading-[3.75rem] text-purple inline-block w-[19.57rem] h-[3.5rem]">
              SELF CHECK  
           </div>
           <div className="absolute top-[13.81rem] left-[8.06rem] text-[1.25rem] tracking-[0.1em] leading-[1.88rem] font-medium font-poppins text-light-background-color inline-block w-[36.12rem]">
-            Qorem ipsum dolor sit amet, consectetur adipiscing elit.
+          Check your breatss regularly with the help of the steps mentioned on our website.
           </div>
           <i className="absolute top-[23.25rem] left-[8.06rem] tracking-[0.1em] leading-[3.75rem] inline-block w-[19.57rem] h-[3.47rem]">
-            Step 2
+            Support
           </i>
           <div className="absolute top-[26.75rem] left-[8.06rem] text-[1.88rem] tracking-[0.1em] leading-[3.75rem] text-purple inline-block w-[38.2rem] h-[3.47rem]">
             FOR BREAST CANCER PATIENTS
@@ -326,7 +325,7 @@ function UserPage() {
             <span className="tracking-[0.2em]">isit</span> </Link>
           </button>
           <i className="absolute top-[38.31rem] left-[8.06rem] tracking-[0.1em] leading-[3.75rem] inline-block w-[19.57rem] h-[3.47rem]">
-            Step 3
+            Regeneration
           </i>
           <div className="absolute top-[41.38rem] left-[8.06rem] text-[1.88rem] tracking-[0.1em] leading-[3.75rem] text-purple inline-block w-[38.2rem] h-[3.47rem]">
             AFTER MASTECTOMY
@@ -353,7 +352,7 @@ function UserPage() {
           <span className="tracking-[0.2em]">isit</span>  
         </button></Link> 
         <div className="absolute top-[72rem] left-[8.63rem] text-[1.25rem] tracking-[0.1em] leading-[1.88rem] font-medium text-light-background-color inline-block w-[38.25rem] h-[3.63rem]">
-          Qorem ipsum dolor sit amet, consectetur adipiscing elit.
+        Sign in and visualize your face or body in 3D for free.
         </div>
         <img
           className="absolute top-[36.28rem] left-[17rem] w-[31.94rem] h-[0.06rem]"

@@ -18,7 +18,7 @@ function DocSection() {
     
         <h1 className=  '@apply w-[789px] h-16 italic font-normal text-[55px] leading-[64px] flex items-center text-[#1F1F1F] left-[2000px] top-[3222px]'>WHAT WE DO </h1>
         <p className=' @apply w-[800px] h-[134px] not-italic font-normal text-base leading-7 text-[#656B6C] left-[1600px] top-[3402px];
-  font-family: "Proxima Nova"'>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed does a eiusmod tempor. There are many variations of passages of available but majority have suffered alteration in some form, by humour or randomised words which don't look even believable. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed does a eiusmod tempor. There are many variations of passage.</p>
+  font-family: "Proxima Nova"'>We primarily provide the tool of Breast Cancer Analyser, that accepts Histopathological Image of the breasts along with the prediction type to give the results with the help of Artificial Intellegence and Machine learning. Also the app teaches you to do a step-by-step breast self exam.</p>
     <button className=' @apply w-[289px] box-border flex flex-row items-start gap-2.5 absolute w-[119px] h-14 border px-5 py-[15px] rounded-md border-solid border-[#E3008D] left-[805px]'>
        <span className='@apply w-[90px] h-[26px] italic font-normal text-base leading-[26px] flex items-center text-[#E3008D] flex-none order-none grow-0;
   font-family: "DM Serif Display"'> Learn More</span>

@@ -1,15 +1,24 @@
 import {React , useState } from 'react'
-
+import {storage} from "../firebase";
+import {ref , uploadBytes} from "firebase/storage";
 import Navbar1 from "./Navbar1"
 function Patient() {
   const[files,setFile] = useState();
+  const[uploadImg,setUploadImg] = useState(null);
 
   function handleChange(event){
      setFile(event.target.files);
+     setUploadImg(event.target.files);
     // console.log(event.target.files[0]);
 
 }
 function handleUpload(){
+  if(uploadImg == null) return;
+  const imgRef = ref(storage,`patient/${uploadImg.name}`);
+uploadBytes(imgRef,uploadImg).then(()=>{
+  alert("file uploaded")
+})
+
 const formData = new FormData()
 for(let i =0 ; i< files.length; i++){
   formData.append(`images[${i}]`, files[0])

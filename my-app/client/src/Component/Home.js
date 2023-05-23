@@ -13,6 +13,9 @@ import i2 from "./i2.png";
 import i3 from "./i3.png"
 import DocSection from './DocSection';
 import Footer from './Footer';
+import  last1 from "./Frame 19 (1).png";
+import last2 from "./Frame 19.png";
+import last3 from "./Frame 21.png";
 
 function Home() {
   return (
@@ -30,15 +33,15 @@ function Home() {
               REGENERATE.
             </h2>
             
-            <p className='para'>Corem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis.</p>
+            <p className='para'> "Join the fight against breast cancer: raising awareness, promoting prevention, and supporting survivors.".</p>
             <div className='flex'>
             <button className='btn'> 
             
-              <span className="btn_content">BOOK A FREE CONSULTATION</span> 
+              <span className="btn_content">GET STARTED NOW</span> 
             </button>
             <button className='btn'> 
             
-            <span className="btn_content">BOOK A FREE CONSULTATION</span> 
+            <span className="btn_content">GET STARTED NOW</span> 
           </button>
           </div>
           </div>
@@ -48,9 +51,9 @@ function Home() {
       <div>
       <div className="flex" style={{backgroundImage: `url(${bg6})` }}>
        
-      <HomeCard  img ={i1} heading= "Self Check" content = " Lorem ipsum dolor sit amet, consectetur adipiscing elit. Tristique auctos, um viton aeeget massa. Felis scelerisque dolor phasellus " bgColor = "pink-400"  to = "./selfcheck"/>
-       <HomeCard  img={i2} heading= "Estimate Cancer" content = " Lorem ipsum dolor sit amet, consectetur adipiscing elit. Tristique auctos, um viton aeeget massa. Felis scelerisque dolor phasellus " bgColor ="pink-100" to = "./analyser"/>
-        <HomeCard  img={i3} heading= "Regeneration" content = " Lorem ipsum dolor sit amet, consectetur adipiscing elit. Tristique auctos, um viton aeeget massa. Felis scelerisque dolor phasellus " bgColor ="pink-100" to = "./regenerate"/>
+      <HomeCard  img ={i1} heading= "Self Check" content = "The app teaches the user to do a step-by-step breast self exam. It helps you understand what is “normal” for you and understand your body better because prevention is better than cure." bgColor = "pink-400"  to = "./selfcheck"/>
+       <HomeCard  img={i2} heading= "Estimate Cancer" content = "For doctors and technical assistances we provide the tool 'Breast Cancer Analyser', that accepts Histopathological Image of the breasts along with the prediction type to give the results" bgColor ="pink-100" to = "./analyser"/>
+        <HomeCard  img={i3} heading= "Regeneration" content = "It helps in enabling plastic surgeons to recreate a natural shape in breast reconstruction for breast cancer patients. With the help of a 3-D model we can see how the breasts look after and before regenration." bgColor ="pink-100" to = "./regenerate"/>
         
 
       </div>
@@ -66,10 +69,14 @@ function Home() {
       <div className='mx-0'>
     <DocSection/>
     </div>
-    <TimeLine />
+    <img className='mx-32' src={last1}/>
+    <img className='mt-24 w-screen' src={last2}/>
+    <img className='mt-24 w-screen' src={last3}/>
+    {/* <TimeLine /> */}
       </div>
     </div>
-    <footer className='top-[10rem]'>
+    
+    {/* <footer className='top-[10rem]'>
     <div className="absolute top-[360.5rem] left-[11.44rem] leading-[1.5rem] text-justify inline-block w-[19.06rem]">
                 joint replacement is a surgery to replace a knee joint with a man made
                 artificial joint. a knee joint with a man-made artificial joint.
@@ -129,7 +136,7 @@ function Home() {
                 alt=""
                 src="/whatsapp-image-20230406-at-1940-2@2x.png"
             />
-    </footer>
+    </footer> */}
     </>
   );
 }

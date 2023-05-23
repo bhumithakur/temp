@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useState } from 'react'
 import sc1 from "./Vector.png"
 import sc2  from "./hero-cover-1.png"
 import Navbar1 from "./Navbar1"
@@ -13,6 +13,19 @@ import bsc4 from "./bstep4.webp"
 import pt from "./Point.png"
 import logo from "./logo.png"
 function SelfCheck() {
+    const [yes,setYes] = useState(false);
+    const [no,setNo] = useState(false);
+    function noclick(){
+    
+             setNo(true);
+             setYes(false);
+        
+    };
+    function yesClick(){
+        setNo(false);
+        setYes(true);
+   
+    }
   return (
   
     <div className="relative bg-lavenderblush w-screen h-[379.38rem] overflow-hidden text-left text-[0.94rem] text-black font-poppins">
@@ -135,7 +148,7 @@ height: 127px}' src={sc3}></img>
                     <span>{` `}</span>
                     <span>Examine Your Breasts in a Mirror With Hands on Hips</span>
                 </i>
-                  <div className="mb-[0.125rem] block min-h-[1.5rem] pl-[1.5rem]">
+                  {/* <div className="mb-[0.125rem] block min-h-[1.5rem] pl-[1.5rem]">
     <input
       className="relative float-left -ml-[1.5rem] mr-1 mt-0.5 h-5 w-5 appearance-none rounded-full border-2 border-solid border-neutral-300 before:pointer-events-none before:absolute before:h-4 before:w-4 before:scale-0 before:rounded-full before:bg-transparent before:opacity-0 before:shadow-[0px_0px_0px_13px_transparent] before:content-[''] after:absolute after:z-[1] after:block after:h-4 after:w-4 after:rounded-full after:content-[''] checked:border-primary checked:before:opacity-[0.16] checked:after:absolute checked:after:left-1/2 checked:after:top-1/2 checked:after:h-[0.625rem] checked:after:w-[0.625rem] checked:after:rounded-full checked:after:border-primary checked:after:bg-primary checked:after:content-[''] checked:after:[transform:translate(-50%,-50%)] hover:cursor-pointer hover:before:opacity-[0.04] hover:before:shadow-[0px_0px_0px_13px_rgba(0,0,0,0.6)] focus:shadow-none focus:outline-none focus:ring-0 focus:before:scale-100 focus:before:opacity-[0.12] focus:before:shadow-[0px_0px_0px_13px_rgba(0,0,0,0.6)] focus:before:transition-[box-shadow_0.2s,transform_0.2s] checked:focus:border-primary checked:focus:before:scale-100 checked:focus:before:shadow-[0px_0px_0px_13px_#3b71ca] checked:focus:before:transition-[box-shadow_0.2s,transform_0.2s] dark:border-neutral-600 dark:checked:border-primary dark:checked:after:border-primary dark:checked:after:bg-primary dark:focus:before:shadow-[0px_0px_0px_13px_rgba(255,255,255,0.4)] dark:checked:focus:border-primary dark:checked:focus:before:shadow-[0px_0px_0px_13px_#3b71ca]"
       type="radio"
@@ -148,7 +161,7 @@ height: 127px}' src={sc3}></img>
     >
       Default radio
     </label>
-  </div>
+  </div> */}
               
             </div>
             <div className="absolute top-[102.94rem] left-[7.88rem] inline-block w-screen  text-[3rem] font-playfair-display">
@@ -207,22 +220,61 @@ height: 127px}' src={sc3}></img>
                         <span>&nbsp;</span>
                     </span>
                 </p>
-                <p className="m-0 text-deeppink font-dm-serif-display">
+                <p className="m-0 text-pink-600 text-2xl font-dm-serif-display">
                     <span>
-                        <i>{`If you see any of the following changes, bring them to your doctor’s attention: `}</i>
+                        <i>{`Do you see any of the following changes ?
+                               `}</i>
                     </span>
+                    <br/>
+                    <p className="m-0">
+                    <span>
+                        <i>&nbsp;</i>
+                    </span>
+                </p>
+                    <span>
+                        <button onClick={yesClick}>Yes</button>
+                       
+                    <span>
+                        <i>&nbsp;</i>
+                    </span>
+              
+                         OR
+                         
+                    <span>
+                        <i>&nbsp;</i>
+                    </span>
+              
+                         <button onClick={noclick}> No</button></span>
+                         {yes && (
+                <p className='pt-3'>
+                   <ol>
+                    <li className='  italic font-normal text-base leading-5'>Dimpling, puckering, or bulging of the skin</li>
+                    <li className=' italic font-normal text-base leading-5'>A nipple that has changed position or an inverted nipple (pushed inward
+      instead of sticking out) </li>
+                    <li className='italic font-normal text-base leading-5'>Redness, soreness, rash, or swelling.</li>
+
+                   </ol>
+                   <button className='text-white text-bold text-xl pt-1 rounded-3xs [background:linear-gradient(90deg,#ef52b2,#faa2d5_48.46%,_#f171c0)] shadow-[0px_4px_40px_rgba(70,_54,_13,_0.36)] box-border border-[1.5px] border-solid border-black'>Bring them to your doctor’s attention</button>
+                </p>
+            )}
+            {no && (
+                <p className='pt-9 absolute w-56 h-5 italic font-normal text-xl leading-7 text-black'>
+                    
+                    You can go ahead
+                </p>
+            )}
                 </p>
                 <p className="m-0">
                     <span>
                         <i>&nbsp;</i>
                     </span>
                 </p>
-                <p className="m-0">
+                {/* <p className="m-0">
                     <span>
                         <span>Dimpling, puckering, or bulging of the skin</span>
                     </span>
-                </p>
-                <p className="m-0">
+                </p> */}
+                {/* <p className="m-0">
                     <span>
                         <span>
                             A nipple that has changed position or an inverted nipple (
@@ -237,12 +289,12 @@ height: 127px}' src={sc3}></img>
                         <span className="text-[1.13rem]">instead of sticking out</span>
                         <span>{`) `}</span>
                     </span>
-                </p>
-                <p className="m-0">
+                </p> */}
+                {/* <p className="m-0">
                     <span>
                         <span>Redness, soreness, rash, or swelling.</span>
                     </span>
-                </p>
+                </p> */}
             </div>
             <div className="absolute top-[72.31rem] left-[7.88rem] text-[1.19rem] inline-block w-[50.63rem] h-[12.31rem]">
                 <p className="m-0">
@@ -265,7 +317,52 @@ height: 127px}' src={sc3}></img>
                 While you’re at the mirror, look for any signs of fluid coming out of
                 one or both nipples (this could be a watery, milky, or yellow fluid or
                 blood).
+                <p className="m-0 text-pink-600 text-2xl font-dm-serif-display">
+                    <span>
+                        <i>{`Do you see any of the following changes ?
+                               `}</i>
+                    </span>
+                    <br/>
+                    <p className="m-0">
+                    <span>
+                        <i>&nbsp;</i>
+                    </span>
+                </p>
+                <p className="m-0">
+                    <span>
+                        <i>&nbsp;</i>
+                    </span>
+                </p>
+                    <span>
+                        <button onClick={yesClick}>Yes</button>
+                       
+                    <span>
+                        <i>&nbsp;</i>
+                    </span>
+              
+                         OR
+                         
+                    <span>
+                        <i>&nbsp;</i>
+                    </span>
+              
+                         <button onClick={noclick}> No</button></span>
+                         {yes && (
+                <p className='pt-3'>
+                   <ol>
+                    <li className='  italic font-normal text-base leading-5'>Dimpling, puckering, or bulging of the skin</li>
+                    <li className=' italic font-normal text-base leading-5'>A nipple that has changed position or an inverted nipple (pushed inward
+      instead of sticking out) </li>
+                    <li className='italic font-normal text-base leading-5'>Redness, soreness, rash, or swelling.</li>
+
+                   </ol>
+                   <button className='text-white text-bold text-xl pt-1 rounded-3xs [background:linear-gradient(90deg,#ef52b2,#faa2d5_48.46%,_#f171c0)] shadow-[0px_4px_40px_rgba(70,_54,_13,_0.36)] box-border border-[1.5px] border-solid border-black'>Bring them to your doctor’s attention</button>
+                </p>
+                         )}
+                         </p>
             </div>
+
+
             <div className="absolute top-[150.38rem] left-[7.88rem] text-[1.19rem] inline-block w-[55rem] h-[8.63rem]">
                 Next, check for breast lumps or abnormalities by feeling your breasts
                 while lying down, using your right hand to feel your left breast, and
@@ -279,25 +376,60 @@ height: 127px}' src={sc3}></img>
                 collarbone to the top of your abdomen, and from your armpit to your
                 cleavage.
             </div>
+            
             <div className="absolute top-[166.5rem] left-[7.88rem] text-[1.19rem] inline-block w-[51.94rem] h-[18.88rem]">
-                <p className="m-0">
-                    Follow a pattern to be sure that you cover the whole breast. You can
-                    begin at the nipple, moving in larger and larger circles until you
-                    reach the outer edge of the breast. You can also move your fingers up
-                    and down vertically, in rows, as if you were mowing a lawn. This
-                    up-and-down approach seems to work best for most women.
+            <p className="m-0 text-pink-600 text-2xl font-dm-serif-display">
+                    <span>
+                        <i>{`Do you see any of the following changes ?
+                               `}</i>
+                    </span>
+                    <br/>
+                    <p className="m-0">
+                    <span>
+                        <i>&nbsp;</i>
+                    </span>
                 </p>
+            <p className="m-0">
+                    <span>
+                        <i>&nbsp;</i>
+                    </span>
+                </p>
+                    <span>
+                        <button onClick={yesClick}>Yes</button>
+                       
+                    <span>
+                        <i>&nbsp;</i>
+                    </span>
+              
+                         OR
+                         
+                    <span>
+                        <i>&nbsp;</i>
+                    </span>
+              
+                         <button onClick={noclick}> No</button></span>
+                         {yes && (
+                <p className='pt-3'>
+                   <ol>
+                    <li className='  italic font-normal text-base leading-5'>Dimpling, puckering, or bulging of the skin</li>
+                    <li className=' italic font-normal text-base leading-5'>A nipple that has changed position or an inverted nipple (pushed inward
+      instead of sticking out) </li>
+                    <li className='italic font-normal text-base leading-5'>Redness, soreness, rash, or swelling.</li>
+
+                   </ol>
+                   <button className='text-white text-bold text-xl pt-1 rounded-3xs [background:linear-gradient(90deg,#ef52b2,#faa2d5_48.46%,_#f171c0)] shadow-[0px_4px_40px_rgba(70,_54,_13,_0.36)] box-border border-[1.5px] border-solid border-black'>Bring them to your doctor’s attention</button>
+                </p>)} </p>
                 <p className="m-0">&nbsp;</p>
                 <p className="m-0">&nbsp;</p>
-                <p className="m-0">
-                    <span className="font-dm-serif-display text-deeppink">{`Be sure to feel all the tissue from the front to the back of your breasts: `}</span>
+                {/* <p className="m-0">
+                    <span className="font-dm-serif-display text-deeppink">{` to feel all the tissue from the front to Be surethe back of your breasts: `}</span>
                     <span>
                         for the skin and tissue just beneath, use light pressure; use medium
                         pressure for tissue in the middle of your breasts; use firm pressure
                         for the deep tissue in the back. When you've reached the deep
                         tissue, you should be able to feel down to your ribcage
                     </span>
-                </p>
+                </p> */}
             </div>
             <img
                 className="absolute top-[190.94rem] left-[58.88rem] w-[30.56rem] h-[37.38rem] object-cover"
@@ -313,6 +445,47 @@ height: 127px}' src={sc3}></img>
                         step 3.
                     </i>
                 </p>
+                <p className="m-0 text-pink-600 text-2xl font-dm-serif-display">
+                    <span>
+                        <i>{`Do you see any of the following changes ?
+                               `}</i>
+                    </span>
+                    <br/>
+                    <p className="m-0">
+                    <span>
+                        <i>&nbsp;</i>
+                    </span>
+                </p>
+                <p className="m-0">
+                    <span>
+                        <i>&nbsp;</i>
+                    </span>
+                </p>
+                    <span>
+                        <button onClick={yesClick}>Yes</button>
+                       
+                    <span>
+                        <i>&nbsp;</i>
+                    </span>
+              
+                         OR
+                         
+                    <span>
+                        <i>&nbsp;</i>
+                    </span>
+              
+                         <button onClick={noclick}> No</button></span>
+                         {yes && (
+                <p className='pt-3'>
+                   <ol>
+                    <li className='  italic font-normal text-base leading-5'>Dimpling, puckering, or bulging of the skin</li>
+                    <li className=' italic font-normal text-base leading-5'>A nipple that has changed position or an inverted nipple (pushed inward
+      instead of sticking out) </li>
+                    <li className='italic font-normal text-base leading-5'>Redness, soreness, rash, or swelling.</li>
+
+                   </ol>
+                   <button className='text-white text-bold text-xl pt-1 rounded-3xs [background:linear-gradient(90deg,#ef52b2,#faa2d5_48.46%,_#f171c0)] shadow-[0px_4px_40px_rgba(70,_54,_13,_0.36)] box-border border-[1.5px] border-solid border-black'>Bring them to your doctor’s attention</button>
+                </p>)} </p>
             </div>
             <img
                 className="relative top-[220.44rem] left-[0rem] w-screen h-[64.13rem]"
@@ -379,6 +552,7 @@ height: 127px}' src={sc3}></img>
                         </span>
                     </span>
                 </p>
+                
                 <p className="m-0">
                     <span className="text-light-background-color">
                         <span className="text-[1.13rem] font-semibold font-playfair-display">

@@ -227,8 +227,7 @@ function Doctor() {
                     src="/vector-2.svg"
                 />
                 <div className="absolute top-[26.55rem] left-[7.87rem] tracking-[0.1em] leading-[1.88rem] font-medium font-poppins inline-block w-[50.74rem] h-[3.26rem]">
-                    Morem ipsum dolor sit amet, consectetur adipiscing elit. Nunc
-                    vulputate libero et velit interdum, ac aliquet odio mattis.
+                Get patient satisfactotion when they get their desired shape using AR.
                 </div>
                 <div className="absolute top-[7.49rem] left-[5.63rem] w-[0rem] h-[27.96rem]" />
                 <div className="absolute bottom-[15.05rem] left-[calc(50%_-_636.67px)] w-[2.34rem] h-[2.05rem]" />
@@ -243,16 +242,16 @@ function Doctor() {
                     src="/point1.svg"
                 />
                 <i className="absolute top-[5.65rem] left-[7.87rem] text-[2.5rem] tracking-[0.1em] leading-[3.75rem] inline-block text-gray-300 w-[19.13rem] h-[3.04rem]">
-                    Step 1
+                Analyser
                 </i>
                 <div className="absolute top-[8.69rem] left-[7.87rem] text-[1.88rem] tracking-[0.1em] leading-[3.75rem] text-purple inline-block w-[19.13rem] h-[3.04rem]">
                     Estimate Cancer
                 </div>
                 <div className="absolute top-[12rem] left-[7.87rem] tracking-[0.1em] leading-[1.88rem] font-medium font-poppins inline-block w-[35.3rem] h-[3.26rem]">
-                    Qorem ipsum dolor sit amet, consectetur adipiscing elit.
+                For doctors and technicals assistants it helps to suggest the type of cancer within seconds.
                 </div>
                 <i className="absolute top-[20.2rem] left-[7.87rem] text-[2.5rem] tracking-[0.1em] leading-[3.75rem] inline-block text-gray-300 w-[19.13rem] h-[3.01rem]">
-                    Step 2
+                    Simulate
                 </i>
                 <div className="absolute top-[23.24rem] left-[7.87rem] text-[1.88rem] tracking-[0.1em] leading-[3.75rem] text-purple inline-block w-[37.33rem] h-[3.01rem]">
                     Breast Reconstruction
