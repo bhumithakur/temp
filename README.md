@@ -15,6 +15,7 @@ Innovation Challenge 2023.
 • Leveraged AR technologies and AI to offer surgery suggestions, enhancing
 
 medical decision-making
+Deployed link - https://b-care-zeta.vercel.app/
 
 ![image](https://github.com/bhumithakur/temp/assets/75352017/95e2bbef-f825-47c2-b218-4a71a1f55857)
 ![image](https://github.com/bhumithakur/temp/assets/75352017/727f4e57-645b-44d8-9046-e58dcbc8ef06)
